@@ -3,7 +3,7 @@ const router = express.Router({ mergeParams: true });
 let BN = require('bignumber.js')
 let Web3 = require('web3');
 let web3 = new Web3();
-web3.setProvider(new web3.providers.WebsocketProvider(process.env.INFURA_KEY));
+web3.setProvider(new web3.providers.HttpProvider("https://mainnet.infura.io/v3/8a3419d52e90487d962fec5f54aa2b56"));
 const data = require('./data/data.json');
 
 
