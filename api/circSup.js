@@ -29,7 +29,7 @@ router.get('/', async (req, res) => {
         let staked = await stakingContract.methods.totalSupply().call()
         circSup = circSup.plus(staked)
         circSup = circSup.dividedBy(1e18).toFixed(2)
-        res.status(200).json({ data: circSup })
+        res.send(circSup)
     }
     catch (err) {
         console.log(err)
