@@ -11,12 +11,17 @@
             "0x6d0f6ec8db9b5769c065bb4fd621c17d2e84cf47",
             "0x5e275e52758a5e058aabb216fca210de724e7562",
             "0x342eb0fc69c2e20e2ae6338579af572b81cdbdf8",
-            "0xd771aF8A20cD0DcAb3D727b882a21b0d0C219DD8"
+            "0xd771aF8A20cD0DcAb3D727b882a21b0d0C219DD8",
+            "0xcB9D78CB76a86844667eAF3Ac62CB5D377b3ce5C",
+            "0xf6827E678F2d8F7656E577842a84B602DB202Eec",
+            "0x610c92c70eb55dfeafe8970513d13771da79f2e0"
         ],
         "Staking": [
             "0xc637db981e417869814b2ea2f1bd115d2d993597",
             "0xa919d7a5fb7ad4ab6f2aae82b6f39d181a027d35",
-            "0x64a1db33f68695df773924682d2efb1161b329e8"
+            "0x64a1db33f68695df773924682d2efb1161b329e8",
+            "0x53dc9D5deB3B7f5cD9A3E4D19A2beCda559D57Aa",
+            "0xCF91812631e37C01c443a4fa02DfB59ee2DDbA7c"
         ]
     },
     "abis": {
