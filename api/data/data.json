@@ -1,27 +1,23 @@
 {
     "addresses": {
-        "SGT": "0x84810bcF08744d5862B8181f12d17bfd57d3b078",
+        "SGT": "0x24C19F7101c1731b85F1127EaA0407732E36EcDD",
         "Deployers": [
             "0x18691f528659D0Abd08f79498dCc7B6fBdc1e91d",
             "0xa1feaF41d843d53d0F6bEd86a8cF592cE21C409e"
         ],
         "TimeLocked": [
-            "0xa23179be88887804f319c047e88fdd4dd4867ef5",
-            "0xa408bfec2b3cb402b01e48b1f9ee50f7cddb5d7f",
-            "0x6d0f6ec8db9b5769c065bb4fd621c17d2e84cf47",
-            "0x5e275e52758a5e058aabb216fca210de724e7562",
-            "0x342eb0fc69c2e20e2ae6338579af572b81cdbdf8",
-            "0xd771aF8A20cD0DcAb3D727b882a21b0d0C219DD8",
-            "0xcB9D78CB76a86844667eAF3Ac62CB5D377b3ce5C",
-            "0xf6827E678F2d8F7656E577842a84B602DB202Eec",
-            "0x610c92c70eb55dfeafe8970513d13771da79f2e0"
+            "0x2Cb4bdc030975f2ABdbbb984e87715505C51D5BC", 
+            "0xC0AAB794F9D2aA7cE56B8BEB6cFfc71BC05c21FC",
+            "0x0279eBC54179EBc5E5e65A9f036Db351233adDc6"
+
         ],
         "Staking": [
-            "0xc637db981e417869814b2ea2f1bd115d2d993597",
-            "0xa919d7a5fb7ad4ab6f2aae82b6f39d181a027d35",
-            "0x64a1db33f68695df773924682d2efb1161b329e8",
-            "0x53dc9D5deB3B7f5cD9A3E4D19A2beCda559D57Aa",
-            "0xCF91812631e37C01c443a4fa02DfB59ee2DDbA7c"
+
+        ],
+        "Multisig": [
+            "0x38aa4CC003D9Ad84505bc7b096122402Db31f708",
+            "0x84B7644095d9a8BFDD2e5bfD8e41740bc1f4f412",
+            "0xeBc37F4c20C7F8336E81fB3aDf82f6372BEf777E"
         ]
     },
     "abis": {

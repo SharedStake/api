@@ -8,7 +8,7 @@ const data = require('./data/data.json');
 
 
 router.get('/', async (req, res) => {
-    var TotalSup = BN(10000000).multipliedBy(1e18);
+    var TotalSup = BN(8889445.739026597496781844).multipliedBy(1e18);
     var circSup = BN(TotalSup);
     try {
         let SGT = new web3.eth.Contract(data.abis.SGT, Web3.utils.toChecksumAddress(data.addresses.SGT));
@@ -24,10 +24,14 @@ router.get('/', async (req, res) => {
             let bal = await SGT.methods.balanceOf(address).call()
             circSup = circSup.minus(bal)
         }
+        for (let address of data.addresses.Multisig) {
+            let bal = await SGT.methods.balanceOf(address).call()
+            circSup = circSup.minus(bal)
+        }
         //add staked amount from SGT pool
-        let stakingContract = new web3.eth.Contract(data.abis.Staking, Web3.utils.toChecksumAddress("0xc637db981e417869814b2ea2f1bd115d2d993597"));
-        let staked = await stakingContract.methods.totalSupply().call()
-        circSup = circSup.plus(staked)
+        //let stakingContract = new web3.eth.Contract(data.abis.Staking, Web3.utils.toChecksumAddress("0xc637db981e417869814b2ea2f1bd115d2d993597"));
+        //let staked = await stakingContract.methods.totalSupply().call()
+        //circSup = circSup.plus(staked)
         circSup = circSup.dividedBy(1e18).toFixed(2)
         res.send(circSup)
     }
