@@ -8,14 +8,15 @@ const data = require('./data/data.json');
 
 
 router.get('/', async (req, res) => {
-    var TotalSup = BN(8889445.739026597496781844).multipliedBy(1e18);
-    var circSup = BN(TotalSup);
+    // var TotalSup = BN(8889445.739026597496781844).multipliedBy(1e18);
     try {
         let SGT = new web3.eth.Contract(data.abis.SGT, Web3.utils.toChecksumAddress(data.addresses.SGT));
-        for (let address of data.addresses.Deployers) {
-            let bal = await SGT.methods.balanceOf(address).call()
-            circSup = circSup.minus(bal)
-        }
+        let TotalSup = await SGT.methods.totalSupply().call()
+        var circSup = BN(TotalSup);
+        // for (let address of data.addresses.Deployers) {
+        //     let bal = await SGT.methods.balanceOf(address).call()
+        //     circSup = circSup.minus(bal)
+        // }
         for (let address of data.addresses.TimeLocked) {
             let bal = await SGT.methods.balanceOf(address).call()
             circSup = circSup.minus(bal)
